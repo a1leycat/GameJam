@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - WorldTree
+  - Start_Plot
+  - Plot
+  - Spawner
+  - start fellow
   layers:
   - Default
   - TransparentFX
