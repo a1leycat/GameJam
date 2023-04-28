@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7118538857335998889}
   m_Layer: 0
   m_Name: StartPlot 1
-  m_TagString: Untagged
+  m_TagString: Start_Plot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numOfPlots: 20
-  plotSpawned: 0
 --- !u!61 &7118538857335998889
 BoxCollider2D:
   m_ObjectHideFlags: 0

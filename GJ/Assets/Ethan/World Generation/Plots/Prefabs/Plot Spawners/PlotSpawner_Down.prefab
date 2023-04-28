@@ -46,14 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1f7d8d674c12fb46900cb3a1eea3332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plotArr:
-  - {fileID: 2495332072096533537, guid: 776bf7950a5b1194ea67f2e4d957661d, type: 3}
-  - {fileID: 2612132891443981979, guid: a654558091e8d3d4eb7640a650575612, type: 3}
-  - {fileID: 2572919743434161102, guid: ac44c79904c463f4d99db7624235dd75, type: 3}
-  - {fileID: 6372023590455823431, guid: 3d2c4d4735603e74d8a0d597f8e83714, type: 3}
-  - {fileID: 6175352084680905982, guid: 96065cc72f8f7164b99987b76d1afe2d, type: 3}
-  - {fileID: 3119205258623706210, guid: 94f835376e107ac49a32e07d325264d3, type: 3}
+  Plot: {fileID: 2131868013640482362, guid: c6abf97c8509dbb46a36e1fd8dbec4fb, type: 3}
   basicPlot: {fileID: 1129129627285238742, guid: d66d6399885d4894982fa66b4427d7ed, type: 3}
+  plotSpawnTimer: 0
 --- !u!58 &1414905648997852170
 CircleCollider2D:
   m_ObjectHideFlags: 0
