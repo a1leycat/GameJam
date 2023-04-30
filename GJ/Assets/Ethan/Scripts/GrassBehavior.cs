@@ -31,7 +31,7 @@ public class GrassBehavior : MonoBehaviour
         {
             deadToGrass -= Time.deltaTime;
         }
-        if (deadToGrass == 0)
+        if (deadToGrass <= 0)
         {
             Grass = true;
         }
