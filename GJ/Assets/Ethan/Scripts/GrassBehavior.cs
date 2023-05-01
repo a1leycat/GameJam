@@ -21,7 +21,7 @@ public class GrassBehavior : MonoBehaviour
         Dead = true;
         nextToGrass = false;
         deadToGrass = 60;
-        deadCount = 4;
+        deadCount = 6;
     }
 
     // Update is called once per frame
@@ -52,7 +52,11 @@ public class GrassBehavior : MonoBehaviour
             Dead = true;
             onFire = false;
         }
-        
+        if (deadCount == 6)
+        {
+            nextToGrass = false;
+            deadToGrass = 60;
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -62,9 +66,12 @@ public class GrassBehavior : MonoBehaviour
             Dead = true;
             deadToGrass = 60;
         }
-        else if (collision.gameObject.GetComponent<GrassBehavior>().Grass == true)
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<GrassBehavior>().Grass == true)
         {
-            deadCount += 1; 
+            deadCount += 1;
             nextToGrass = true;
         }
         else if (collision.gameObject.GetComponent<GrassBehavior>().Dead == true && deadCount > 0)
